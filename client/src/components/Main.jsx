@@ -31,7 +31,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleUploadImage}>
+      <form className="upload_form" onSubmit={this.handleUploadImage}>
         <div>
           <input ref={(ref) => { this.uploadInput = ref; }} type="file" />
         </div>
@@ -42,7 +42,7 @@ class Main extends React.Component {
         <div>
           <button>Upload</button>
         </div>
-        <img src={this.state.imageURL} alt="img" />
+        <img src={this.state.imageURL} alt="img" width="250" height="250" crop="fill"/>
       </form>
     );
   }

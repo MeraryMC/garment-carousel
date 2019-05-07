@@ -41,6 +41,12 @@ body {
 
 }
 
+.upload_form {
+  justify-content: center;
+  display: flex;
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
