@@ -5,8 +5,10 @@ body {
   padding: 0;
   background:white;
   font-family: 'Just Another Hand', cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-weight:normal;
 }
 
 .garment_carousel {
@@ -24,30 +26,28 @@ body {
   vertical-align: middle;
   justify-content:middle;
   margin-top: 10px;
-  height: 500px;
+  height: 450px;
   width: 97%;
   background-size: 100%;
   background-image: url("siteimages/background.jpg"),linear-gradient(rgba(255, 251, 251, 0.1),rgba(255, 251, 251, 0.1));
   background-repeat: no-repeat;
   overflow:hidden;
+  display:flex;
   /* box-shadow: 0 0 2em #80808066; */
 }
 
 .upload_an_item {
+  margin:30px;
   justify-content: center;
-  font-size: 40px;
-  display: flex;
-  vertical-align: middle;
+  font-size: 30px;
+  /* display: flex; */
+}
 
+form {
+  display:flex;
 }
 
 .upload_form {
-  justify-content: center;
-  display: flex;
-
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  margin-top:100px;
+  vertical-align: middle;
 }

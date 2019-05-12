@@ -31,18 +31,20 @@ class Main extends React.Component {
 
   render() {
     return (
-      <form className="upload_form" onSubmit={this.handleUploadImage}>
+      <form onSubmit={this.handleUploadImage}>
+      <div className = "upload_form">
         <div>
-          <input ref={(ref) => { this.uploadInput = ref; }} type="file" />
+          <input className="no_file_chosen" ref={(ref) => { this.uploadInput = ref; }} type="file" />
         </div>
         <div>
-          <input ref={(ref) => { this.fileName = ref; }} type="text" placeholder="Enter the desired name of file" />
+          <input className="enter_name" ref={(ref) => { this.fileName = ref; }} type="text" placeholder="Enter the desired name of file" />
         </div>
         <br />
         <div>
-          <button>Upload</button>
+          <button className="upload_button">Upload</button>
         </div>
-        <img src={this.state.imageURL} alt="img" width="250" height="250" crop="fill"/>
+        <img className="upload_image" src={this.state.imageURL} alt="img" width="250" height="250" crop="fill"/>
+        </div>
       </form>
     );
   }
